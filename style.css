@@ -1,0 +1,102 @@
+:root {
+  --primary-cyan: hsl(185, 75%, 39%);
+  --dark-blue: hsl(229, 23%, 23%);
+  --gray-blue: hsl(227, 10%, 46%);
+  --line-color: #e8e8e8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: var(--primary-cyan);
+  background-image: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
+  background-repeat: no-repeat;
+  background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  background: white;
+  width: 350px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 50px 100px -20px rgba(8, 70, 94, 0.5);
+}
+
+.card-top img {
+  width: 100%;
+  display: block;
+}
+
+.card-content {
+  position: relative;
+  text-align: center;
+  padding: 75px 20px 25px;
+  border-bottom: 1px solid var(--line-color);
+}
+
+/* Position-ის გამოყენება ავატარისთვის */
+.avatar-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.user-photo {
+  border-radius: 50%;
+  border: 5px solid white;
+  width: 96px;
+}
+
+.name {
+  font-size: 18px;
+  color: var(--dark-blue);
+  font-weight: 700;
+}
+
+.age {
+  color: var(--gray-blue);
+  font-weight: 400;
+  margin-left: 8px;
+}
+
+.location {
+  font-size: 14px;
+  color: var(--gray-blue);
+  margin-top: 10px;
+}
+
+.card-stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 25px;
+}
+
+.stat-group {
+  text-align: center;
+}
+
+.value {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--dark-blue);
+}
+
+.label {
+  font-size: 10px;
+  color: var(--gray-blue);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
